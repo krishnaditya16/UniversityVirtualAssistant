@@ -15,7 +15,7 @@ const NavbarSidebarLayout: FC<PropsWithChildren<NavbarSidebarLayoutProps>> =
       <>
         <Navbar />
         <div className="flex items-start pt-16">
-          <Sidebar />
+          {/* <Sidebar /> */}
           <MainContent isFooter={isFooter}>{children}</MainContent>
         </div>
       </>
@@ -27,7 +27,7 @@ const MainContent: FC<PropsWithChildren<NavbarSidebarLayoutProps>> = function ({
   isFooter,
 }) {
   return (
-    <main className="relative h-full w-full overflow-y-auto bg-gray-50 dark:bg-gray-900 lg:ml-64">
+    <main className="relative h-full w-full overflow-y-auto bg-gray-50 dark:bg-gray-900 lg">
       {children}
       {isFooter && (
         <div className="mx-4 mt-4">
@@ -49,9 +49,6 @@ const MainContentFooter: FC = function () {
             </Footer.Link>
             <Footer.Link href="#" className="mr-3 mb-3 lg:mb-0">
               Privacy Policy
-            </Footer.Link>
-            <Footer.Link href="#" className="mr-3">
-              Licensing
             </Footer.Link>
             <Footer.Link href="#" className="mr-3">
               Cookie Policy
@@ -84,18 +81,12 @@ const MainContentFooter: FC = function () {
               >
                 <FaGithub className="text-lg" />
               </Footer.Link>
-              <Footer.Link
-                href="#"
-                className="hover:[&>*]:text-black dark:hover:[&>*]:text-gray-300"
-              >
-                <FaDribbble className="text-lg" />
-              </Footer.Link>
             </div>
           </Footer.LinkGroup>
         </div>
       </Footer>
       <p className="my-8 text-center text-sm text-gray-500 dark:text-gray-300">
-        &copy; 2019-2022 Flowbite.com. All rights reserved.
+        &copy; 2023 Krishna Aditya. All rights reserved.
       </p>
     </>
   );

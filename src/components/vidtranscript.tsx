@@ -1,6 +1,5 @@
-import { useEffect, useState } from "react";
 import type { FC } from "react";
-import { Card, Button, Badge, Label, TextInput, Textarea, Tooltip } from "flowbite-react/lib/esm/components";
+import { Card, Button } from "flowbite-react/lib/esm/components";
 import { HiPlay, HiPause, HiRewind, HiArrowsExpand } from "react-icons/hi";
 
 
